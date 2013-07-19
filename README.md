@@ -33,6 +33,9 @@ Simple configurations for a few of the applications that I enjoy using.
 * ~/.gitconfig.local: e.g. [user] info.
 * ~/.zshrc.local: e.g. PATH environment variable.
 
+## License
+This project is licenced under the MIT license.
+
 ## Credits
 * [thoughtbot](http://github.com/thoughtbot)'s [dotfiles](https://github.com/thoughtbot/dotfiles) helped me figure out how to separate personal data using \*.local files.
 * [robbyrussell](http://github.com/robbyrussell)'s [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh) project is git-clone'd in the Makefile.

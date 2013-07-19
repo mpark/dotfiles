@@ -1,0 +1,72 @@
+!   __  __
+!   \ \/ /_ __ ___  ___  ___  _   _ _ __ ___ ___  ___
+!    \  /| '__/ _ \/ __|/ _ \| | | | '__/ __/ _ \/ __|
+!  _ /  \| | |  __/\__ \ (_) | |_| | | | (_|  __/\__ \
+! (_)_/\_\_|  \___||___/\___/ \__,_|_|  \___\___||___/
+!
+! General {
+    XTerm*termName: xterm-256color
+    XTerm*eightBitInput: false
+! }
+!
+! Font {
+    XTerm*faceName: Droid Sans Mono
+    XTerm*faceNameDoublesize: Baekmuk Gulim
+    XTerm*faceSize: 9
+! }
+!
+! Xft {
+    Xft.antialias: true
+    Xft.dpi: 96
+    Xft.hint: full
+    Xft.hintstyle: hintfull
+    Xft.rgba: rgb
+! }
+!
+! Colors {
+!
+!   General {
+      *background : #222222
+      *foreground : #eeeeee
+      *cursorColor: #b15c00
+!   }
+!
+!   Black {  todo color / vim tab highlight
+      *color0:  #000000
+      *color8:  #555753
+!   }
+!
+!   Red {  constants / grep highlight
+      *color1:  #bc180b
+      *color9:  #aa1111
+!   }
+!
+!   Green {  keywords / executable
+      *color2:  #6cb100
+      *color10: #7ccc00
+!   }
+!
+!   Yellow {  commits on git log / search highlight
+      *color3:  #b15c00
+      *color11: #fe9d04
+!   }
+!
+!   Blue {  comments / directories
+      *color4:  #214da9
+      *color12: #0a6dd1
+!   }
+!
+!   Magenta {  preprocessor directives e.g #include / #ad7fa8
+      *color5:  #8741b8
+      *color13: #ea80db
+!   }
+!
+!   Cyan {  vimscript variables / symlinks, highlight on brace matching
+      *color6:  #06989A
+      *color14: #fe9d04
+!   }
+!
+!   White {  visual mode highlightt / vim messages
+      *color7:  #c9c9c9
+      *color15: #dbdbdb
+!   }

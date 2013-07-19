@@ -1,0 +1,16 @@
+#         _   _                 ____    ___
+#    __ _| |_| | ___ __ ___    |___ \  / _ \
+#   / _` | __| |/ / '__/ __|____ __) || | | |
+#  | (_| | |_|   <| | | (_|_____/ __/ | |_| |
+# (_)__, |\__|_|\_\_|  \___|   |_____(_)___/
+#   |___/
+
+gtk-theme-name = "Ambiance"
+gtk-font-name = "Droid Sans 9"
+gtk-icon-theme-name = "Humanity"
+
+gtk-xft-antialias = 1
+gtk-xft-dpi = 96
+gtk-xft-hinting = 1
+gtk-xft-hintstyle = "full"
+gtk-xft-rgba = "rgb"

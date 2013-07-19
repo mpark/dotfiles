@@ -1,0 +1,30 @@
+#         _ _                   __ _
+#    __ _(_) |_ ___ ___  _ __  / _(_) __ _
+#   / _` | | __/ __/ _ \| '_ \| |_| |/ _` |
+#  | (_| | | || (_| (_) | | | |  _| | (_| |
+# (_)__, |_|\__\___\___/|_| |_|_| |_|\__, |
+#   |___/                            |___/
+
+[alias]
+  br = branch
+  cm = commit
+  co = checkout
+  cp = cherry-pick
+  dc = diff --cached
+  df = diff
+  mf = merge --ff-only
+  st = status
+  pr = pull --rebase
+[core]
+  editor = vim
+  eol = native
+  whitespace = fix, -indent-with-non-tab, trailing-space, cr-at-eol
+[color]
+  branch = auto
+  diff = auto
+  status = auto
+  ui = auto
+[push]
+  default = simple
+[include]
+  path = .gitconfig.local

@@ -3,7 +3,7 @@
 These are my dotfiles in use for my ArchLinux system on ASUS Zenbook Prime (UX31A-DH71).
 You are more than welcome to fork this repository, however please be aware that some of the configurations are device specific.
 
-## install
+## Install
 
 ```
 % git clone https://github.com/mpark/dotfiles.git ~/.dotfiles
@@ -11,13 +11,13 @@ You are more than welcome to fork this repository, however please be aware that 
 % make
 ```
 
-## uninstall
+## Uninstall
 
 ```
 % make clean
 ```
 
-## included
+## Included
 
 Simple configurations for a few of the applications that I enjoy using.
 
@@ -28,11 +28,11 @@ Simple configurations for a few of the applications that I enjoy using.
 * **x**: customized color theme in .Xresources.
 * **zsh**: uses oh-my-zsh and a simple zshrc.
 
-## personal
+## Personal
 
 * ~/.gitconfig.local: e.g. [user] info.
 * ~/.zshrc.local: e.g. PATH environment variable.
 
-## credits
+## Credits
 * [thoughtbot](http://github.com/thoughtbot)'s [dotfiles](https://github.com/thoughtbot/dotfiles): \*.local files to separate personal data.
 * [robbyrussell](http://github.com/robbyrussell)'s [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh): is git-clone'd in the Makefile.

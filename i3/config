@@ -189,6 +189,7 @@ exec setxkbmap -option caps:swapescape
 
 # startup daemons
 exec batterymon -n 10 -t 16x16  # battery monitor
+exec dropboxd                   # dropbox
 exec ibus-daemon -drx           # ibus for input keyboard
 exec syndaemon -i 0.5 -d        # synpatics daemon for TouchPad configurations
 
@@ -196,8 +197,8 @@ exec syndaemon -i 0.5 -d        # synpatics daemon for TouchPad configurations
 exec blueman-applet  # bluetooth
 exec nm-applet       # networkmanager
 
-# start pulseaudio
-exec start-pulseaudio-x11
-
 # startup applications
 exec google-chrome
+
+# suspend after 30 minutes of inactivity
+exec xautolock -locker "systemctl suspend" -time 30

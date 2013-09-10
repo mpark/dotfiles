@@ -23,27 +23,25 @@ APPS = ${GIT} ${GTK} ${I3} ${SSH} ${VIM} ${X} ${ZSH}
 
 all: ${APPS}
 
-define symlinks =
-	@${foreach file, ${1}, ln -is ${addprefix ${PWD}/,${file}} ${addprefix ${HOME}/.,${file}}; }
-endef
+symlinks = @$(foreach file, ${1}, ln -is ${addprefix ${PWD}/,${file}} ${addprefix ${HOME}/.,${file}};)
 
 ${GIT} : ${GIT_FILES}
-	@${call symlinks, $^}
+	@$(call symlinks, $^)
 
 ${GTK} : ${GTK_FILES}
-	@${call symlinks, $^}
+	@$(call symlinks, $^)
 
 ${I3} : ${I3_FILES}
-	@${call symlinks, $^}
+	@$(call symlinks, $^)
 
 ${VIM} : ${VIM_FILES}
-	@${call symlinks, $^}
+	@$(call symlinks, $^)
 
 ${X} : ${X_FILES}
-	@${call symlinks, $^}
+	@$(call symlinks, $^)
 
 ${ZSH} : ${ZSH_FILES}
-	@${call symlinks, $^}
+	@$(call symlinks, $^)
 	@git clone https://github.com/robbyrussell/oh-my-zsh.git ${HOME}/.oh-my-zsh
 
 clean :

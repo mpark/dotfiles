@@ -23,7 +23,7 @@
     set shiftwidth=2                          " Indents are 2 spaces
     set softtabstop=2                         " Tab key in insert mode counts for 2 columns
     set tabstop=2                             " Tabs are 2 columns
-    set textwidth=100                         " Wrap at 100 characters per line.
+    set textwidth=80                          " Wrap at 80 characters per line.
 "   C++ {
       let c_no_curly_error = 1                " Allow braces for initializer list
       set cindent                             " Turn on cindent
@@ -61,18 +61,12 @@
 " Macros {
     ab cl class
     ab fr friend
-    ab hc /* <FILEPATH.h>
-          \<CR>
-          \<CR>TODO */
+    ab hc /* TODO */
           \<CR>
           \<CR>#pragma once
           \<CR>
     ab #i #include
-    ab ic /* <FILEPATH.cc>
-          \<CR>
-          \<CR>Implements <FILEPATH.h> */
-          \<CR>
-          \<CR>#include <FILEPATH.h>
+    ab ic #include <FILEPATH.h>
           \<CR>
     ab im int main() {
     ab nc NO_CONSTRUCTION
@@ -83,17 +77,12 @@
     ab pro protected
     ab pub public
     ab st static
-    ab td typedef
     ab tm template
     ab tn typename
     ab todo /* TODO */
-    ab uc /* <FILEPATH.test.cc>
+    ab uc #include <FILEPATH.h>
           \<CR>
-          \<CR>Unit test for <FILEPATH.h> */
-          \<CR>
-          \<CR>#include <FILEPATH.h>
-          \<CR>
-          \<CR>#include <test/kit.h>
+          \<CR>#include <gtest/gtest.h>
           \<CR>
     ab un using namespace
     ab vi virtual

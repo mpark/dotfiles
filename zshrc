@@ -69,5 +69,3 @@
     export VISUAL=vim
 # }
 
-# Aliases {
-# }

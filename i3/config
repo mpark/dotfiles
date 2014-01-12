@@ -28,7 +28,7 @@ bindsym Mod1+Return exec XMODIFIERS=@im=ibus i3-sensible-terminal
 bindsym Mod1+Shift+q kill
 
 # start chromium
-bindsym Mod1+c exec google-chrome
+bindsym Mod1+c exec google-chrome-stable
 
 # start dmenu (a program launcher)
 bindsym Mod1+space exec dmenu_run -b

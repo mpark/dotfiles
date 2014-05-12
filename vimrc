@@ -54,12 +54,16 @@
     nnoremap Y y$
     " Clearing highlighted search
     nmap <silent> <leader>/ :nohlsearch<CR>
-    "switch between .h and .cc files
+    " Switch between .h and .cc files
     map <F8> :tabe %:p:s,.h$,.X123X,:s,.cc$,.h,:s,.X123X$,.cc,<CR>
+    " Clang-format integration.
+    map <C-K> :pyf /usr/share/clang/clang-format.py<CR>
+    imap <C-K> <ESC>:pyf /usr/share/clang/clang-format.py<CR>i
 "}
 "
 " Macros {
     ab cl class
+    ab ex explicit
     ab fr friend
     ab hc /* TODO */
           \<CR>

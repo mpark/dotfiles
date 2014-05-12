@@ -12,7 +12,7 @@
 ! Font {
     XTerm*faceName: Droid Sans Mono
     XTerm*faceNameDoublesize: Baekmuk Gulim
-    XTerm*faceSize: 10
+    XTerm*faceSize: 14
 ! }
 !
 ! Xft {

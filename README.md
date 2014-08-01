@@ -28,7 +28,7 @@ Simple configurations for a few of the applications that I enjoy using.
 
 ### License
 
-This project is licensed under the MIT license.
+This project is licensed under the MIT License.
 
 ### Credits
 

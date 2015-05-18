@@ -15,7 +15,6 @@
   mf = merge --ff-only
   st = status
   pr = pull --rebase
-  lg = log --all --graph --abbrev-commit --date=relative --pretty=format:'%h -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset'
 [core]
   editor = vim
   eol = native

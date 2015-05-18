@@ -1,21 +1,15 @@
 # dotfiles
 
-These are my dotfiles in use for my ArchLinux system on ASUS Zenbook Prime (UX31A-DH71).
-You are more than welcome to fork this repository, however please be aware that some of the configurations are device specific.
-
-### Included
+## Included
 
 Simple configurations for a few of the applications that I enjoy using.
 
 * __clangformat__: `.clang-format`
 * __git__: simple `.gitconfig`.
-* __gtk__: themes for GTK applications.
-* __i3wm__: i3 window manager configs.
 * __vim__: simple `.vimrc`.
-* __x__: customized color theme in `.Xresources`.
 * __zsh__: uses `oh-my-zsh` and a simple `.zshrc`.
 
-### Intallation
+## Intallation
 
 1. Clone this repository. `git clone git@github.com:mpark/dotfiles.git ~/.dotfiles`
 3. Clone [robbyrussell](http://github.com/robbyrussell)'s [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh) repository. `git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh`

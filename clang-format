@@ -85,6 +85,24 @@ AlwaysBreakTemplateDeclarations: true
 
 # Good:
 #
+#   F(first,
+#     second,
+#     third,
+#     fourth,
+#     fifth,
+#     sixth,
+#     seventh,
+#     eighth);
+#
+# Bad:
+#
+#   F(first, second, third, fourth, fifth, sixth,
+#     seventh, eighth);
+#
+BinPackArguments: false
+
+# Good:
+#
 #   void F(int first,
 #          int second,
 #          int third,

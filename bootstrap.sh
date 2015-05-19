@@ -34,8 +34,8 @@ if test ! `which brew`; then
   brew install graphviz
   brew install htop-osx
   brew install leveldb
-  brew install llvm35 --with-clang --with-clang-extra
-  brew install llvm36 --with-clang --with-clang-extra
+  brew install llvm35 --with-clang
+  brew install llvm36 --with-clang
   brew install maven
   brew install md5sha1sum
   brew install mesos

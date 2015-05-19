@@ -17,8 +17,64 @@ if test ! `which brew`; then
   ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
   echo "Installing homebrew packages."
-  brew install autoconf automake boost boot2docker brew-cask ccache cloog cloog-ppl015 cloog018 cmake coreutils docker doxygen gdbm ghc git gmp gmp4 gnu-tar go graphviz htop-osx isl isl011 leveldb libevent libffi libmpc08 libpng libtool llvm35 llvm36 maven md5sha1sum mesos mpfr2 openssl p7zip pandoc pkg-config ppl011 python3 qcachegrind qt readline rust scons snappy sqlite subversion the_silver_searcher tig tmux valgrind vim wget xz zookeeper
+  brew install autoconf
+  brew install automake
+  brew install boost
+  brew install boot2docker
+  brew install brew-cask
+  brew install ccache
+  brew install cmake
+  brew install coreutils
+  brew install docker
+  brew install doxygen
+  brew install ghc
+  brew install git
+  brew install gnu-tar
+  brew install go
+  brew install graphviz
+  brew install htop-osx
+  brew install leveldb
+  brew install llvm35 --with-clang --with-clang-extra
+  brew install llvm36 --with-clang --with-clang-extra
+  brew install maven
+  brew install md5sha1sum
+  brew install mesos
+  brew install openssl
+  brew install python3
+  brew install qcachegrind
+  brew install readline
+  brew install rust
+  brew install scons
+  brew install subversion
+  brew install the_silver_searcher
+  brew install tig
+  brew install tmux
+  brew install valgrind
+  brew install vim --with-client-server
+  brew install wget
 
   echo "Installing homebrew-cask packages."
-  brew cask install 1password adobe-reader amethyst biicode chromecast dash dropbox flash-player google-chrome google-drive google-hangouts iterm2 java karabiner lightpaper mactex seil skype slack virtualbox vlc vmware-fusion xquartz
+  brew cask install 1password
+  brew cask install adobe-reader
+  brew cask install amethyst
+  brew cask install biicode
+  brew cask install chromecast
+  brew cask install dash
+  brew cask install dropbox
+  brew cask install flash-player
+  brew cask install google-chrome
+  brew cask install google-drive
+  brew cask install google-hangouts
+  brew cask install iterm2
+  brew cask install java
+  brew cask install karabiner
+  brew cask install lightpaper
+  brew cask install mactex
+  brew cask install seil
+  brew cask install skype
+  brew cask install slack
+  brew cask install virtualbox
+  brew cask install vlc
+  brew cask install vmware-fusion
+  brew cask install xquartz
 fi

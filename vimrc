@@ -15,6 +15,9 @@
 "   let Vundle manage Vundle, required
     Plugin 'gmarik/Vundle.vim'
 "
+    Plugin 'ntpeters/vim-better-whitespace'
+    let g:strip_whitespace_on_save=1  " Strip whitespace on save by default.
+"
     call vundle#end()            " Required
     filetype plugin indent on    " Turn on filetype detection
 " }

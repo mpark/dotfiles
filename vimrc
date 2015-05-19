@@ -42,7 +42,7 @@
     set shiftwidth=2             " Indents are 2 spaces
     set softtabstop=2            " Tab key in insert mode counts for 2 columns
     set tabstop=2                " Tabs are 2 columns
-    set textwidth=80             " Wrap at 80 characters per line.
+    set textwidth=80             " Wrap at 80 characters for comments
 "   C++ {
       let c_no_curly_error = 1            " Allow braces for initializer list
       set cindent                         " Turn on cindent
@@ -51,6 +51,9 @@
 "   }
 " }
 "
+" Auto-commands {
+    autocmd FileType * set formatoptions=t  " Auto-wrap text and comments at textwidth
+" }
 " Key-bindings {
     " The default leader is '\', but ',' is closer.
     let mapleader=','

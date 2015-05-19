@@ -21,6 +21,9 @@
 "
 " General {
     syntax on                    " Turn on syntax highlighting
+    set noswapfile               " Turn off swap files
+    set nobackup
+    set nowb
 " }
 "
 " UI {

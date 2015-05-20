@@ -23,6 +23,10 @@
     let g:localvimrc_name = [ '.vimrc' ]
     let g:localvimrc_sandbox = 0
 "
+    Plugin 'Valloric/YouCompleteMe'
+    let g:ycm_confirm_extra_conf = 0
+    let g:ycm_enable_diagnostic_signs = 0
+"
     call vundle#end()            " Required
     filetype plugin indent on    " Turn on filetype detection
 " }

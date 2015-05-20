@@ -18,6 +18,11 @@
     Plugin 'ntpeters/vim-better-whitespace'
     let g:strip_whitespace_on_save=1  " Strip whitespace on save by default.
 "
+    Plugin 'embear/vim-localvimrc'
+    let g:localvimrc_ask = 0
+    let g:localvimrc_name = [ '.vimrc' ]
+    let g:localvimrc_sandbox = 0
+"
     call vundle#end()            " Required
     filetype plugin indent on    " Turn on filetype detection
 " }

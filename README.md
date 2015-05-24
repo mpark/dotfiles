@@ -2,20 +2,23 @@
 
 ## Included
 
-Simple configurations for a few of the applications that I enjoy using.
+Configurations for a few of the applications I enjoy using.
 
-* __clangformat__: `.clang-format`
-* __git__: simple `.gitconfig`.
-* __vim__: simple `.vimrc`.
-* __zsh__: uses `oh-my-zsh` and a simple `.zshrc`.
+* __ClangFormat__: `.clang-format`
+* __Git__: `.gitconfig`
+* __YouCompleteMe__: `.ycm_extra_conf.py`
+* __Vim__: `.vimrc`
+* __Zsh__: `.zshrc` + `oh-my-zsh`
 
-## Intallation
+## Installation
 
 1. Clone this repository. `git clone git@github.com:mpark/dotfiles.git ~/.dotfiles`
-3. Clone [robbyrussell](http://github.com/robbyrussell)'s [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh) repository. `git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh`
-2. `make` to install all configs. `make <config>` to install specific configs
+1. Run `./bootstrap.sh`
 
 ### Local Settings
+
+Add local configurations to the following files. `.gitconfig` and `.zshrc`
+automatically loads them if they exist.
 
 * `~/.gitconfig.local`: e.g. `[user]` info.
 * `~/.zshrc.local`: e.g. `PATH` environment variable, aliases

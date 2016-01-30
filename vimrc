@@ -85,8 +85,8 @@
     " Clearing highlighted search
     nmap <silent> <leader>/ :nohlsearch<CR>
     " Clang-format integration.
-    map <C-K> :pyf /usr/local/share/clang-3.6/clang-format-3.6.py<CR>
-    imap <C-K> <C-O>:pyf /usr/local/share/clang-3.6/clang-format-3.6.py<CR>
+    map <C-K> :pyf /usr/local/share/clang/clang-format.py<CR>
+    imap <C-K> <C-O>:pyf /usr/local/share/clang/clang-format.py<CR>
     " Backspace over everything in insert mode
     set backspace=indent,eol,start
 "}

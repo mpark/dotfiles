@@ -26,10 +26,7 @@
     let g:localvimrc_name = [ '.vimrc' ]
     let g:localvimrc_sandbox = 0
 "
-    Plugin 'Valloric/YouCompleteMe'
-    let g:ycm_confirm_extra_conf = 0
-    let g:ycm_enable_diagnostic_signs = 0
-    nnoremap <leader>jd :YcmCompleter GoTo<CR>
+    Plugin 'lyuts/vim-rtags'
 "
     call vundle#end()            " Required
     filetype plugin indent on    " Turn on filetype detection
@@ -67,6 +64,7 @@
 " Auto-commands {
     autocmd FileType * set formatoptions=t  " Auto-wrap text and comments at textwidth
 " }
+
 " Key-bindings {
     " The default leader is '\', but ',' is closer.
     let mapleader=','
@@ -85,7 +83,7 @@
     nnoremap Y y$
     " Clearing highlighted search
     nmap <silent> <leader>/ :nohlsearch<CR>
-    " Clang-format integration.
+    " `clang-format` integration.
     map <C-K> :pyf /usr/local/share/clang/clang-format.py<CR>
     imap <C-K> <C-O>:pyf /usr/local/share/clang/clang-format.py<CR>
     " Backspace over everything in insert mode

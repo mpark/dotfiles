@@ -18,7 +18,25 @@
     # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
     # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
     # Example format: plugins=(rails git textmate ruby lighthouse)
-    plugins=(brew brew-cask cp docker git history-substring-search pip python tmux)
+    plugins=(brew
+             brew-cask
+             bundler
+             cp
+             colored-man-pages
+             docker
+             git
+             gpg-agent
+             history-substring-search
+             httpie
+             pip
+             python
+             rake
+             rust
+             sbt
+             scala
+             ssh-agent
+             sudo
+             tmux)
 
     source $ZSH/oh-my-zsh.sh
 # }
@@ -28,7 +46,7 @@
 # }
 
 # Vi-Mode {
-    set -o vi
+    bindkey -v
 
     bindkey -M vicmd 'k' history-substring-search-up
     bindkey -M vicmd 'j' history-substring-search-down

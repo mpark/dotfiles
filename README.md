@@ -6,7 +6,6 @@ Configurations for a few of the applications I enjoy using.
 
 * __ClangFormat__: `.clang-format`
 * __Git__: `.gitconfig`
-* __YouCompleteMe__: `.ycm_extra_conf.py`
 * __Vim__: `.vimrc`
 * __Zsh__: `.zshrc` + `oh-my-zsh`
 

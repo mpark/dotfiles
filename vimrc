@@ -28,6 +28,13 @@
 "
     Plugin 'lyuts/vim-rtags'
 "
+    Plugin 'mileszs/ack.vim'
+    let g:ackprg = 'ag --vimgrep --cpp -s'
+    nnoremap <Leader>a :Ack<Space>
+"
+    Plugin 'wincent/command-t'
+    let g:CommandTFileScanner = 'git'
+"
     call vundle#end()            " Required
     filetype plugin indent on    " Turn on filetype detection
 " }

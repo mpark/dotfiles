@@ -1,4 +1,4 @@
-for file in clang-format gitconfig gitignore vimrc zshrc ycm_extra_conf.py; do
+for file in clang-format gitconfig gitignore vimrc zshrc; do
   ln -is ${PWD}/${file} ${HOME}/.${file}
 done
 

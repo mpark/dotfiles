@@ -25,7 +25,6 @@
              colored-man-pages
              docker
              git
-             gpg-agent
              history-substring-search
              httpie
              pip

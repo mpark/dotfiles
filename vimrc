@@ -29,7 +29,7 @@
     Plugin 'lyuts/vim-rtags'
 "
     Plugin 'mileszs/ack.vim'
-    let g:ackprg = 'ag --vimgrep --cpp -s'
+    let g:ackprg = 'ag --vimgrep -s'
     nnoremap <Leader>a :Ack<Space>
 "
     Plugin 'wincent/command-t'

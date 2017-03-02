@@ -37,11 +37,9 @@
              sudo
              tmux)
 
-    source $ZSH/oh-my-zsh.sh
-# }
-
-# General {
     [[ -f $HOME/.zshrc.local ]] && source $HOME/.zshrc.local
+
+    source $ZSH/oh-my-zsh.sh
 # }
 
 # Vi-Mode {

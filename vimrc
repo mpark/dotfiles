@@ -19,7 +19,6 @@
     let g:strip_whitespace_on_save = 1  " Strip whitespace on save by default.
 "
     Plugin 'flazz/vim-colorschemes'
-    let g:colors_name = 'smyck'
 "
     Plugin 'embear/vim-localvimrc'
     let g:localvimrc_ask = 0
@@ -36,6 +35,9 @@
     let g:CommandTFileScanner = 'git'
 "
     call vundle#end()            " Required
+"
+    colorscheme smyck            " Choose a colorscheme.
+"
     filetype plugin indent on    " Turn on filetype detection
 " }
 "

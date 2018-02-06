@@ -25,8 +25,6 @@
     let g:localvimrc_name = [ '.vimrc' ]
     let g:localvimrc_sandbox = 0
 "
-    Plugin 'lyuts/vim-rtags'
-"
     Plugin 'mileszs/ack.vim'
     let g:ackprg = 'ag --vimgrep -s'
     nnoremap <Leader>a :Ack<Space>
@@ -103,13 +101,7 @@
     ab cl class
     ab ex explicit
     ab fr friend
-    ab hc /* TODO */
-          \<CR>
-          \<CR>#pragma once
-          \<CR>
     ab #i #include
-    ab ic #include <FILEPATH.h>
-          \<CR>
     ab im int main() {
     ab ns namespace
     ab op operator
@@ -120,10 +112,6 @@
     ab tm template
     ab tn typename
     ab todo /* TODO */
-    ab uc #include <FILEPATH.h>
-          \<CR>
-          \<CR>#include <gtest/gtest.h>
-          \<CR>
     ab un using namespace
     ab vi virtual
 " }

@@ -16,7 +16,9 @@
     Plugin 'gmarik/Vundle.vim'
 "
     Plugin 'ntpeters/vim-better-whitespace'
-    let g:strip_whitespace_on_save = 1  " Strip whitespace on save by default.
+    let g:better_whitespace_enabled = 1
+    let g:strip_whitespace_on_save = 1
+    autocmd FileType markdown EnableStripWhitespaceOnSave
 "
     Plugin 'flazz/vim-colorschemes'
 "
@@ -24,6 +26,10 @@
     let g:localvimrc_ask = 0
     let g:localvimrc_name = [ '.vimrc' ]
     let g:localvimrc_sandbox = 0
+"
+    Plugin 'vim-pandoc/vim-pandoc'
+    Plugin 'vim-pandoc/vim-pandoc-syntax'
+    let g:pandoc#modules#disabled = ["folding"]
 "
     Plugin 'mileszs/ack.vim'
     let g:ackprg = 'ag --vimgrep -s'
@@ -91,8 +97,9 @@
     " Clearing highlighted search
     nmap <silent> <leader>/ :nohlsearch<CR>
     " `clang-format` integration.
-    map <C-K> :pyf /usr/local/share/clang/clang-format.py<CR>
-    imap <C-K> <C-O>:pyf /usr/local/share/clang/clang-format.py<CR>
+    let g:clang_format_path = '/usr/local/opt/llvm/bin/clang-format'
+    map <C-K> :py3f /usr/local/opt/llvm/share/clang/clang-format.py<CR>
+    imap <C-K> <C-O>:py3f /usr/local/opt/llvm/share/clang/clang-format.py<CR>
     " Backspace over everything in insert mode
     set backspace=indent,eol,start
 "}

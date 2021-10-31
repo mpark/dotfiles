@@ -1,7 +1,3 @@
-for file in clang-format gitconfig gitignore vimrc zshrc; do
-  ln -is ${PWD}/${file} ${HOME}/.${file}
-done
-
 if [ ! -d "${HOME}/.vim/bundle/Vundle.vim" ]; then
   echo "Installing vundle."
   git clone git@github.com:gmarik/Vundle.vim.git ${HOME}/.vim/bundle/Vundle.vim
@@ -16,3 +12,7 @@ if test ! `which brew`; then
   echo "Installing homebrew."
   ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 fi
+
+for file in clang-format gitconfig gitignore vimrc zshrc; do
+  ln -is ${PWD}/${file} ${HOME}/.${file}
+done

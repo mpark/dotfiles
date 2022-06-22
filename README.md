@@ -11,7 +11,7 @@ Configurations for a few of the applications I enjoy using.
 
 ## Installation
 
-1. Clone this repository. `git clone git@github.com:mpark/dotfiles.git ~/.dotfiles`
+1. Clone this repository. `git clone https://github.com/mpark/dotfiles.git ~/.dotfiles`
 1. Run `./bootstrap.sh`
 
 ### Local Settings
